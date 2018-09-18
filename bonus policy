@@ -9,7 +9,7 @@ printf("enter the gender");
 scanf("%ch",&gender);
 printf("enter the balance");
 scanf("%d",&bal);
-if(gender==f)
+if(gender=='f')
 {
   if(bal>5000)
   {
