@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char gender,f;
+int bal,bonus;
+clrscr();
+printf("enter the gender");
+scanf("%ch",&gender);
+printf("enter the balance");
+scanf("%d",&bal);
+if(gender==f)
+{
+  if(bal>5000)
+  {
+  bonus=(bal*5)/100;
+  printf("%d",bonus);
+  }
+  else
+  {
+  bonus=(bal*2)/100;
+  printf("%d",bonus);
+  }
+  }
+else
+{
+	bonus=(bal*2)/100;
+	printf("%d",bonus);
+
+}
+getch();
+}
