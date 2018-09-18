@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+void main()
+{
+int n1,n2,R;
+char o;
+clrscr();
+printf("enter the first number");
+scanf("%d",&n1);
+printf("enter the second number");
+scanf("%d",&n2);
+printf("enter the operator");
+scanf("%c",&o);
+if(o=='+')
+ {
+   R=n1+n2;
+   printf("%d",R);
+ }
+else if(o=='-')
+ {
+  R=n1-n2;
+  printf("%d",R);
+ }
+else if(o=='*')
+ {
+  R=n1*n2;
+  printf("%d",R);
+ }
+else if(o=='/')
+ {
+  R=n1/n2;
+  printf("%d",R);
+ }
+else if(o=='%')
+ {
+  R=n1%n2;
+  printf("%d",R);
+ }
+else
+{
+ printf("invalid number");
+}
+getch();
+}
