@@ -1,0 +1,24 @@
+
+public class Constructor
+{
+    public static void main(String[] args) 
+    {
+       Abc obj =  new Abc(5,5.5);
+    }
+}
+
+class Abc       // constructor overloading
+{
+    public Abc()
+    {
+        System.out.println("A is constant");
+    }
+   public Abc(int i)
+           {
+               System.out.println("B is cons");
+           }
+   public Abc(int i, double d)
+   {
+       System.out.println("C is Constant ");
+   }
+}
