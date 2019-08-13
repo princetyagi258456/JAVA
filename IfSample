@@ -1,0 +1,20 @@
+class IfSample
+{
+public static void main(String ar[])
+{
+int x=10;
+int y=20;
+ if(x<y)
+ System.out.println("x is less then y");
+ x= x*2;
+ if(x==y)
+ System.out.println("x is equal y");
+ x=x*2;
+ if(x>y)
+ System.out.println("x is greater then y");
+ if(x == y)
+ System.out.println("you won't see this");
+ 
+ 
+}
+}
