@@ -1,0 +1,14 @@
+class CharDemo2
+{
+public static void main(String ar[])
+{
+char i;
+char ch1;
+ch1= 'X';
+System.out.println("ch1 contains " + ch1);
+for(i=1;i<90;i++)
+{
+System.out.println("ch1 is now " + i);
+}
+}
+}
