@@ -1,0 +1,20 @@
+class Conv{
+public static void main(String ar[])
+ {
+  byte b;
+  int i=4546;
+  double d=23456.45;
+  
+  System.out.println("\n Conversion of int to byte");
+  b =(byte) i;
+  System.out.println("i and b " + b + " to "+ i );
+  
+  System.out.println("\n Conversion of double to int");
+  i =(int) d;
+  System.out.println("d and i " + d +" to " + i );
+  
+  System.out.println("\n Conversion of double to byte");
+  b =(byte) d;
+  System.out.println("d and b " + d +" to " + b );
+ }
+}
