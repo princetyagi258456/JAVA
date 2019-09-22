@@ -1,0 +1,6 @@
+class AutoArray{
+public static void main(String ar[]){
+int month_days[]= {30,31,30,31,31,30,31,30,31};
+System.out.println("April months" + month_days[3] +"days.");
+}
+}
