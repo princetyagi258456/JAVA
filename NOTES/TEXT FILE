@@ -1,0 +1,186 @@
+1.Variables:-you  build a software just to store a data and where to store a data we have variables.
+primitive datatype:-	int,float,char,double(5.5),long.......
+ 
+2.int i=5((int is data type) and (i is variable)and(5 is the value)).
+   Boolean is also a data type in java
+    eg->boolean b = true; 
+
+3.ASCII CODE:- integer representation of your character.[American Standard code for information interchange]
+   A=65
+   Range of ASCII is 0-127.
+       for(int i=0;i<=127;i++)
+       {
+           System.out.printf("%d  :  %c \n ",i,i);
+       }
+
+4.IDE(INTEGRATED DEVELOPMENT ENVIRONMENT)
+a.netbeans
+b.eclipse
+
+5.Printf is also used in java (printstream) and println is (void).
+
+6.If you give a binary number on machine and you want to convert it decimal number so just give input like this:-
+int i= 0b10000 or 10_00_00_00
+System.out.println(i);
+
+7.[how to work with boolean]
+    //boolean-> primitive data type.
+    // Boolean-> class.
+       {	 boolean b=false;
+        	 b = !b;
+        	System.out.println(b);
+	output is (true) because of (!)this.	
+			    	  } 
+
+8. TERNARY  OPERATOR
+	 int i=4;
+       	 int j=5;
+        
+   //       if(i==1)
+     //         j=6;
+       //   else
+         //     j=7;
+        	OR
+        j= i==1?6:7;
+ if i=1 then print 6 otherwise 7 print 
+with the help of ternary operator we don't use conditions (eg:-if,if else )  
+
+9. In java (;)is not mandatory in end
+ eg-> Sytem.out.println("Hello World") 
+
+10. LABELED BREAK STATEMENT
+
+ public static void main(String[] args) 
+    {   
+        prince:(Labeled break method written like this .... if you want to stop your outer loop then you work with labeled)
+       for(int i=1;i<=4;i++)
+       {
+           for(int j=1;j<=4;j++)
+           {
+               if(i==3)
+                   break prince; // Labeled Break Statement
+               System.out.println("*");
+           }
+           System.out.println("");
+       }
+10.[LOOP]-> when you starting something and ending something.
+
+11.Perfect Number = 6->1+2+3.
+		28->1+2+4+7+14.
+Code:- 
+		int sum=0,i,n=28;
+		{
+		for(i=1;i<n;i++)
+		{
+			if(n%i==0)
+			sum+=i;
+		}
+
+			if(sum==i)
+	 		sout("perfect number");
+			else
+			sout("not perfect");	
+		}
+
+12. Fibonacci Series:-
+	1  1  2  3  5  8  13  21
+Code:-
+	int a=1;b=1;c,n=50;
+	sout("1   1");
+	if(c<n)
+	{
+		c=a+b;
+		sout(c  +"    ");
+		a=b;
+		b=c;
+	}
+
+13. Types of swapping without third variable:-
+   		 int a=4,b=5;
+		b=a+b-(a=b);
+		OR
+		a=a^b;//1 0 0^1 0 1=0 0 1(1)
+		b=a^b;//0 0 1^1 0 1=1 0 0(4)
+		a=a^b;//0 0 1^1 0 0=1 0 1(5)
+          [ This is X-OR method which working on binary numbers]
+		OR
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println(a  +"  "  +b); 
+
+14.Enhanced for loop:-only work with arrays and collection.
+	[	int values[]={1,2,3,4,5,6}; 		normal for loop:- int values[]={1,2,3,4,5,6}; 		normal for loop:- 
+		for(int i: values)					for(int i=0;i<6;i++)
+								sout(values[i]);
+		sout(i);
+								
+					]
+
+15.  How To Use Random Class in JAva
+public class LetsSee 
+{
+   public static void main(String[] args) 
+    {  
+        Random r = new Random();[this is define is random].
+      int a[]=new int[30];[this is array define,[30 is number will be print ]]
+      for(int i=0;i<a.length;i++)
+\
+      {
+          a[i]=r.nextInt(50);[0-50 number will be print in 0-30 position]
+      }
+      try{
+        System.out.println(a[35]);[35 position is not in our array thats why we use exception handling  i.e. try&catch]
+      }
+      catch(Exception e)
+              {
+                  System.out.println("maximum value is 29");
+              }
+          for(int i : a)[this enhanced for loop]
+        System.out.println(i);
+      
+      
+   }
+}
+
+16.You cannot call main without object ....and you cannot create object without a main.  -1
+   egg:- void main(String args[]).........in this condition satisfy -1 line
+    public static void main(String ar[])..... now line-1 not satisfy that's why we use this...
+
+17. CONSTRUCTOR:- is a member method./constructor will have the same name as a class name/constructor will never return something that's why we 
+return / it will use to allocate a memory 
+
+18.In JAVA everything is cal by value(HASH CODE).
+   :-When you pass an object inside a JAVA as a parameter it goes HASH CODE of it.
+19.  In Class you used only public,final and abstract or not use the private and protected.
+	:- if you want to use variable outside the package then make sure it is  public.
+
+20.        STATIC:- static is a keyword used in java with the member function or member 
+		variable of your class so that you can call those members without 
+		using the object or we don't need to instantiate any class to call those 
+		members.
+		
+public class Static {
+ public static void main(String[] args) {
+    Abc.show();
+    }
+    }
+class Abc
+{
+   static int i=5;
+    public static void show()
+    {
+        System.out.println("hi");
+        System.out.println(i);
+    }
+}
+      
+21. WHY WE CANNOT USED NON-STATIC VARIABLE IN STATIC METHODS..??
+SOLUTION:-  we can use static variable inside a non-static mehod because all the non static-members share the same static members
+		but can we use non-static variable inside a static method NO
+EVERY OBJECT WILL HAVE OWN VALUE  AND IF YOU TRY TO CHANGE THE VALUE IN STATIC METHODS  THAT'S NOT POSSIBLE
+[YOU CANNOT USE NON-STATIC  VARIABLES IN STATIC MEMBER]	
+       
+    
+
+					
